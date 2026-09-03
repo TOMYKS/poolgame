@@ -1,0 +1,116 @@
+[gd_scene format=3 uid="uid://bvm2hc0yc7u0r"]
+
+[ext_resource type="PackedScene" uid="uid://be32epfjlia70" path="res://assets/models/Pool-table.FBX" id="1_pswsw"]
+[ext_resource type="Texture2D" uid="uid://druqx4uiuq1qm" path="res://assets/models/ball01.jpg" id="2_2nqsm"]
+[ext_resource type="Texture2D" uid="uid://dqw18tw8veijm" path="res://assets/models/ball02.jpg" id="3_l2k82"]
+[ext_resource type="Texture2D" uid="uid://b2yg4ubvqxtbl" path="res://assets/models/ball03.jpg" id="4_14yas"]
+[ext_resource type="Texture2D" uid="uid://tvdjlxnk00cv" path="res://assets/models/ball04.jpg" id="5_pq5d2"]
+[ext_resource type="Texture2D" uid="uid://d3n4yqdkq7kfg" path="res://assets/models/ball05.jpg" id="6_4qafg"]
+[ext_resource type="Texture2D" uid="uid://dodi7ps8pul8" path="res://assets/models/ball06.jpg" id="7_68g3u"]
+[ext_resource type="Texture2D" uid="uid://cooove8o0x31r" path="res://assets/models/ball07.jpg" id="8_xyv00"]
+[ext_resource type="Texture2D" uid="uid://xc5qon758o77" path="res://assets/models/ball08.jpg" id="9_gw5if"]
+[ext_resource type="Texture2D" uid="uid://1tn8hu61bapc" path="res://assets/models/ball09.jpg" id="10_kb3ei"]
+[ext_resource type="Texture2D" uid="uid://c2i4lc5dtqygd" path="res://assets/models/ball10.jpg" id="11_68xtd"]
+[ext_resource type="Texture2D" uid="uid://23tsdrp0mi7t" path="res://assets/models/ball11.jpg" id="12_8e6ln"]
+[ext_resource type="Texture2D" uid="uid://dk32r23xmhly6" path="res://assets/models/ball12.jpg" id="13_vdmu6"]
+[ext_resource type="Texture2D" uid="uid://dbot22g7r3c68" path="res://assets/models/ball13.jpg" id="14_5mlv2"]
+[ext_resource type="Texture2D" uid="uid://ch6xxoay2cvgx" path="res://assets/models/ball14.jpg" id="15_56ylh"]
+[ext_resource type="Texture2D" uid="uid://b1ct0fkxuk5it" path="res://assets/models/ball15.jpg" id="16_cynaa"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8fx2v"]
+albedo_texture = ExtResource("2_2nqsm")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hpg8x"]
+albedo_texture = ExtResource("3_l2k82")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nd804"]
+albedo_texture = ExtResource("4_14yas")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_klgu3"]
+albedo_texture = ExtResource("5_pq5d2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ir88j"]
+albedo_texture = ExtResource("6_4qafg")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yqm6a"]
+albedo_texture = ExtResource("7_68g3u")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b72v6"]
+albedo_texture = ExtResource("8_xyv00")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vmptb"]
+albedo_texture = ExtResource("9_gw5if")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gwsv8"]
+albedo_texture = ExtResource("10_kb3ei")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g1fxu"]
+albedo_texture = ExtResource("11_68xtd")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_krktv"]
+albedo_texture = ExtResource("12_8e6ln")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m5ist"]
+albedo_texture = ExtResource("13_vdmu6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o0oxj"]
+albedo_texture = ExtResource("14_5mlv2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jngtn"]
+albedo_texture = ExtResource("15_56ylh")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_epwuq"]
+albedo_texture = ExtResource("16_cynaa")
+
+[node name="Pool-table" unique_id=1360827664 instance=ExtResource("1_pswsw")]
+
+[node name="Ball1" parent="." index="9" unique_id=623087165]
+material_override = SubResource("StandardMaterial3D_8fx2v")
+
+[node name="Ball2" parent="." index="10" unique_id=156610995]
+material_override = SubResource("StandardMaterial3D_hpg8x")
+
+[node name="Ball3" parent="." index="11" unique_id=993110868]
+material_override = SubResource("StandardMaterial3D_nd804")
+
+[node name="Ball4" parent="." index="12" unique_id=1265751851]
+material_override = SubResource("StandardMaterial3D_klgu3")
+
+[node name="Ball5" parent="." index="13" unique_id=1170519693]
+material_override = SubResource("StandardMaterial3D_ir88j")
+
+[node name="Ball6" parent="." index="14" unique_id=713483685]
+material_override = SubResource("StandardMaterial3D_yqm6a")
+
+[node name="Ball7" parent="." index="15" unique_id=1998036263]
+material_override = SubResource("StandardMaterial3D_b72v6")
+
+[node name="Ball8" parent="." index="16" unique_id=2024481034]
+material_override = SubResource("StandardMaterial3D_vmptb")
+
+[node name="Ball9" parent="." index="17" unique_id=395258426]
+material_override = SubResource("StandardMaterial3D_gwsv8")
+
+[node name="Ball10" parent="." index="18" unique_id=406408094]
+material_override = SubResource("StandardMaterial3D_g1fxu")
+
+[node name="Ball11" parent="." index="19" unique_id=1334443676]
+material_override = SubResource("StandardMaterial3D_krktv")
+
+[node name="Ball12" parent="." index="20" unique_id=459130423]
+material_override = SubResource("StandardMaterial3D_m5ist")
+
+[node name="Ball13" parent="." index="21" unique_id=645691242]
+material_override = SubResource("StandardMaterial3D_o0oxj")
+
+[node name="Ball14" parent="." index="22" unique_id=618306741]
+material_override = SubResource("StandardMaterial3D_jngtn")
+
+[node name="Ball15" parent="." index="23" unique_id=1901533097]
+material_override = SubResource("StandardMaterial3D_epwuq")
+
+[node name="Camera3D" type="Camera3D" parent="." index="24" unique_id=1509434829]
+transform = Transform3D(0, -0.5817936, 0.8133365, 0, 0.8133365, 0.5817936, -1, 0, 0, -0.8101636, 1.2253387, -0.4471606)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." index="25" unique_id=1099031603]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -2.0876324, 1.8891029, -0.56245637)
