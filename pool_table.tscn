@@ -64,6 +64,9 @@ albedo_texture = ExtResource("16_cynaa")
 
 [node name="Pool-table" unique_id=1360827664 instance=ExtResource("1_pswsw")]
 
+[node name="Cue001" parent="." index="0" unique_id=1554673641]
+transform = Transform3D(-0.51684314, -0.008964614, 0.85603315, -5.798616e-11, 0.9999451, 0.0104717035, -0.85608, 0.005412229, -0.5168149, -2.5, 1.0076505, -1)
+
 [node name="Ball1" parent="." index="9" unique_id=623087165]
 material_override = SubResource("StandardMaterial3D_8fx2v")
 
