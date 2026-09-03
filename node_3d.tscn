@@ -1,8 +1,21 @@
 [gd_scene format=3 uid="uid://daavl4nvvfm8"]
 
-[ext_resource type="PackedScene" uid="uid://bvm2hc0yc7u0r" path="res://pool_table.tscn" id="1_a202f"]
+[ext_resource type="PackedScene" uid="uid://chqrdsnuldjhl" path="res://table.tscn" id="1_a202f"]
+[ext_resource type="PackedScene" uid="uid://cpsp68ufjxljw" path="res://cosas.tscn" id="2_noarx"]
 
-[node name="Node3D" type="Node3D" unique_id=1281423428]
+[node name="Sala" type="Node3D" unique_id=1281423428]
 
-[node name="Pool-table" parent="." unique_id=1360827664 instance=ExtResource("1_a202f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3155313, 0, 0.6318644)
+[node name="Mesa" parent="." unique_id=1870686171 instance=ExtResource("1_a202f")]
+
+[node name="Sketchfab_Scene" parent="." unique_id=426828003 instance=ExtResource("2_noarx")]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1711303356]
+transform = Transform3D(-0.0034250119, 0.24681254, -0.9690572, 0.00087232265, 0.9690633, 0.24681099, 0.99999374, 5.820802e-11, -0.0035343533, -1.0690234, 1.0883995, -0.08794922)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=388199005]
+transform = Transform3D(1, 0, 0, 0, -0.0120632555, 0.9999273, 0, -0.9999273, -0.0120632555, -0.46241593, 1.7162206, -0.022736311)
+light_indirect_energy = 1.25
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="." unique_id=423307800]
+transform = Transform3D(1, 0, 0, 0, -0.0120632555, 0.9999273, 0, -0.9999273, -0.0120632555, 0.4633832, 1.7162206, -0.022736311)
+light_indirect_energy = 1.25

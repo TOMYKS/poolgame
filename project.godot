@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Pool"
-run/main_scene="uid://bvm2hc0yc7u0r"
+run/main_scene="uid://daavl4nvvfm8"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
