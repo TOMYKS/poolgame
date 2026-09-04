@@ -8,6 +8,7 @@
 [node name="Mesa" parent="." unique_id=1870686171 instance=ExtResource("1_a202f")]
 
 [node name="Sketchfab_Scene" parent="." unique_id=426828003 instance=ExtResource("2_noarx")]
+visible = false
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1711303356]
 transform = Transform3D(-0.0034250119, 0.24681254, -0.9690572, 0.00087232265, 0.9690633, 0.24681099, 0.99999374, 5.820802e-11, -0.0035343533, -1.0690234, 1.0883995, -0.08794922)
