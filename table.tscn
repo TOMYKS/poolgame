@@ -3,17 +3,23 @@
 [ext_resource type="ArrayMesh" uid="uid://dsdd2v2mwna8r" path="res://assets/mesa1.res" id="1_v5i0k"]
 [ext_resource type="ArrayMesh" uid="uid://ba6wkogeap7dc" path="res://assets/mesa2.res" id="2_kl0hw"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_iwtcp"]
-size = Vector3(1.9589233, 1.2940674, 0.97125244)
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_oimtj"]
 size = Vector3(0.20462036, 1, 0.13616943)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_kl0hw"]
 points = PackedVector3Array(0, 0.5, 0.5, 0.5, -0.5, 0.5, 0, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_noarx"]
+bounce = 0.5
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_ds2lj"]
 size = Vector3(0.82180786, 0.083984375, 0.053466797)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_i6w6a"]
+friction = 0.4
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iwtcp"]
+size = Vector3(1.966, 1.294, 0.978)
 
 [node name="Sketchfab_Scene" type="Node3D" unique_id=1870686171]
 
@@ -30,11 +36,6 @@ transform = Transform3D(100, 0, 0, 0, -1.6292068e-05, 100, 0, -100, -1.6292068e-
 
 [node name="MesaColisiones" type="StaticBody3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab" unique_id=1546981124]
 transform = Transform3D(1, 0, 0, 0, -1.6292067e-07, -1, 0, 1, -1.6292067e-07, 0, 0, 0)
-
-[node name="Pano" type="CollisionShape3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/MesaColisiones" unique_id=1456860034]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013145208, 0.14703369, -0.0032653809)
-shape = SubResource("BoxShape3D_iwtcp")
-debug_color = Color(0, 0.6, 0.7019608, 1)
 
 [node name="Corner1" type="StaticBody3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/MesaColisiones" unique_id=866586362]
 
@@ -191,36 +192,6 @@ transform = Transform3D(0.76040596, 0, -0.64944804, 0, 1, 0, 0.64944804, 0, 0.76
 shape = SubResource("BoxShape3D_oimtj")
 debug_color = Color(0.76037335, 0.26281336, 0.971651, 1)
 
-[node name="nxnz" type="CollisionShape3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/MesaColisiones" unique_id=1764837122]
-transform = Transform3D(0.99999994, 0, 0, 0, 0.9402881, -0.34037954, 0, 0.34037957, 0.940288, -0.484, 0.836, -0.53)
-shape = SubResource("BoxShape3D_ds2lj")
-debug_color = Color(0.9764706, 0, 0.40784314, 0.8627451)
-
-[node name="xnz" type="CollisionShape3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/MesaColisiones" unique_id=591758756]
-transform = Transform3D(0.99999994, 0, 0, 0, 0.9402881, -0.34037954, 0, 0.34037957, 0.940288, 0.48, 0.836, -0.53)
-shape = SubResource("BoxShape3D_ds2lj")
-debug_color = Color(0.9764706, 0, 0.40784314, 0.8627451)
-
-[node name="xz" type="CollisionShape3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/MesaColisiones" unique_id=739475452]
-transform = Transform3D(0.99999994, 0, 0, 0, 0.9402881, 0.34037954, 0, -0.34037957, 0.940288, 0.48, 0.836, 0.53)
-shape = SubResource("BoxShape3D_ds2lj")
-debug_color = Color(0.9764706, 0, 0.40784314, 0.8627451)
-
-[node name="nxz" type="CollisionShape3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/MesaColisiones" unique_id=1811460831]
-transform = Transform3D(0.99999994, 0, 0, 0, 0.9402881, 0.34037954, 0, -0.34037957, 0.940288, -0.48, 0.836, 0.53)
-shape = SubResource("BoxShape3D_ds2lj")
-debug_color = Color(0.9764706, 0, 0.40784314, 0.8627451)
-
-[node name="nxnx" type="CollisionShape3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/MesaColisiones" unique_id=1803435506]
-transform = Transform3D(-4.3711385e-08, 0.34037957, -0.940288, 0, 0.9402881, 0.34037954, 0.99999994, 1.4878464e-08, -4.1101295e-08, -1.0174729, 0.836, 0)
-shape = SubResource("BoxShape3D_ds2lj")
-debug_color = Color(0.9764706, 0, 0.40784314, 0.8627451)
-
-[node name="xx" type="CollisionShape3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/MesaColisiones" unique_id=1178658345]
-transform = Transform3D(-4.3711385e-08, -0.34037957, -0.940288, 0, 0.9402881, -0.34037954, 0.99999994, -1.4878464e-08, -4.1101295e-08, 1.017, 0.836, 0)
-shape = SubResource("BoxShape3D_ds2lj")
-debug_color = Color(0.9764706, 0, 0.40784314, 0.8627451)
-
 [node name="Pool Table _Mark Peters on Sketchfab_PoolTable_MTL_0" type="MeshInstance3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/MesaColisiones" unique_id=772320124]
 transform = Transform3D(1, 0, 0, 0, -1.6292067e-07, 1, 0, -1, -1.6292067e-07, 0, 0, 0)
 mesh = ExtResource("1_v5i0k")
@@ -228,3 +199,46 @@ mesh = ExtResource("1_v5i0k")
 [node name="Pool Table _Mark Peters on Sketchfab_PoolTable_MTL_02" type="MeshInstance3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/MesaColisiones" unique_id=1759518791]
 transform = Transform3D(1, 0, 0, 0, -1.6292067e-07, 1, 0, -1, -1.6292067e-07, 0, 0, 0)
 mesh = ExtResource("2_kl0hw")
+
+[node name="Rojos" type="StaticBody3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab" unique_id=716479983]
+transform = Transform3D(1, 0, 0, 0, -1.6292067e-07, -1, 0, 1, -1.6292067e-07, 0, 0, 0)
+physics_material_override = SubResource("PhysicsMaterial_noarx")
+
+[node name="nxnz" type="CollisionShape3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/Rojos" unique_id=335496062]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.9402881, -0.34037954, 0, 0.34037957, 0.940288, -0.484, 0.836, -0.53)
+shape = SubResource("BoxShape3D_ds2lj")
+debug_color = Color(0.9764706, 0, 0.40784314, 0.8627451)
+
+[node name="xnz" type="CollisionShape3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/Rojos" unique_id=1997308855]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.9402881, -0.34037954, 0, 0.34037957, 0.940288, 0.48, 0.836, -0.53)
+shape = SubResource("BoxShape3D_ds2lj")
+debug_color = Color(0.9764706, 0, 0.40784314, 0.8627451)
+
+[node name="xz" type="CollisionShape3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/Rojos" unique_id=193423284]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.9402881, 0.34037954, 0, -0.34037957, 0.940288, 0.48, 0.836, 0.53)
+shape = SubResource("BoxShape3D_ds2lj")
+debug_color = Color(0.9764706, 0, 0.40784314, 0.8627451)
+
+[node name="nxz" type="CollisionShape3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/Rojos" unique_id=96721]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.9402881, 0.34037954, 0, -0.34037957, 0.940288, -0.48, 0.836, 0.53)
+shape = SubResource("BoxShape3D_ds2lj")
+debug_color = Color(0.9764706, 0, 0.40784314, 0.8627451)
+
+[node name="nxnx" type="CollisionShape3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/Rojos" unique_id=1940096106]
+transform = Transform3D(-4.3711385e-08, 0.34037957, -0.940288, 0, 0.9402881, 0.34037954, 0.99999994, 1.4878464e-08, -4.1101295e-08, -1.0174729, 0.836, 0)
+shape = SubResource("BoxShape3D_ds2lj")
+debug_color = Color(0.9764706, 0, 0.40784314, 0.8627451)
+
+[node name="xx" type="CollisionShape3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/Rojos" unique_id=1197347248]
+transform = Transform3D(-4.3711385e-08, -0.34037957, -0.940288, 0, 0.9402881, -0.34037954, 0.99999994, -1.4878464e-08, -4.1101295e-08, 1.017, 0.836, 0)
+shape = SubResource("BoxShape3D_ds2lj")
+debug_color = Color(0.9764706, 0, 0.40784314, 0.8627451)
+
+[node name="Pano" type="StaticBody3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab" unique_id=1465219660]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+physics_material_override = SubResource("PhysicsMaterial_i6w6a")
+
+[node name="Pano" type="CollisionShape3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/Pano" unique_id=940666147]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0013145208, 0.14703369, -0.0032653809)
+shape = SubResource("BoxShape3D_iwtcp")
+debug_color = Color(0, 0.6, 0.7019608, 1)

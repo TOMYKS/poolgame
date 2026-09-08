@@ -7,8 +7,8 @@
 
 [node name="Mesa" parent="." unique_id=1870686171 instance=ExtResource("1_a202f")]
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1711303356]
-transform = Transform3D(-0.0034250119, 0.24681254, -0.9690572, 0.00087232265, 0.9690633, 0.24681099, 0.99999374, 5.820802e-11, -0.0035343533, -1.0690234, 1.0883995, -0.08794922)
+[node name="Camera3D" type="Camera3D" parent="Mesa" unique_id=387942110]
+transform = Transform3D(-0.19586562, 0.7880721, -0.58359146, 9.308648e-10, 0.59511846, 0.803638, 0.98063076, 0.157405, -0.11656329, -1.0944597, 1.6522751, 0)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=388199005]
 transform = Transform3D(1, 0, 0, 0, -0.0120632555, 0.9999273, 0, -0.9999273, -0.0120632555, -0.46241593, 1.7162206, -0.022736311)
@@ -19,4 +19,4 @@ transform = Transform3D(1, 0, 0, 0, -0.0120632555, 0.9999273, 0, -0.9999273, -0.
 light_indirect_energy = 1.25
 
 [node name="Ball" parent="." unique_id=151042961 instance=ExtResource("2_noarx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.165, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04211974, 1.3977063, -0.5363614)
