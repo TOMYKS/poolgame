@@ -18,7 +18,7 @@ transform = Transform3D(1, 0, 0, 0, -0.0120632555, 0.9999273, 0, -0.9999273, -0.
 light_indirect_energy = 1.25
 
 [node name="Ball" parent="." unique_id=151042961 instance=ExtResource("2_noarx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7880732, 0.9820863, 0.4288527)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7880732, 0.9190122, 0.45657668)
 sleep_speed = 0.02
 
 [node name="CamaraPivot" type="Node3D" parent="." unique_id=513250114 node_paths=PackedStringArray("target_ball")]

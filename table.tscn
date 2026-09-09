@@ -199,11 +199,11 @@ shape = SubResource("BoxShape3D_oimtj")
 debug_color = Color(0.76037335, 0.26281336, 0.971651, 1)
 
 [node name="Pool Table _Mark Peters on Sketchfab_PoolTable_MTL_0" type="MeshInstance3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab" unique_id=772320124]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.54, 0, -6.125779e-08, 0.401)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, -6.670545e-08, 0.43443742)
 mesh = ExtResource("1_v5i0k")
 
 [node name="Pool Table _Mark Peters on Sketchfab_PoolTable_MTL_02" type="MeshInstance3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab" unique_id=1759518791]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.54, 0, -6.125779e-08, 0.401)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, -6.670545e-08, 0.43443742)
 mesh = ExtResource("2_kl0hw")
 
 [node name="Rojos" type="StaticBody3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab" unique_id=716479983]
