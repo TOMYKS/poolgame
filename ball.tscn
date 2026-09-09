@@ -3,10 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://btei3fd4f08n1" path="res://assets/model3/items_26.png" id="1_ktgx5"]
 [ext_resource type="Texture2D" uid="uid://hdnh1j3lunhh" path="res://assets/model3/items_1.png" id="2_hgol0"]
 [ext_resource type="Texture2D" uid="uid://b1v4cbk0tq5n0" path="res://assets/model3/items_2.png" id="3_n5601"]
+[ext_resource type="Script" uid="uid://cubmptr42ng" path="res://ball_physics.gd" id="4_physics"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ktgx5"]
-friction = 0.2
-bounce = 0.7
+friction = 0.0
+bounce = 0.4
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7dujb"]
 resource_name = "PoolTableBallWhite_MTL"
@@ -58,10 +59,14 @@ shadow_mesh = SubResource("ArrayMesh_r6tsp")
 radius = 0.02865439
 
 [node name="Ball" type="RigidBody3D" unique_id=151042961]
+mass = 0.17
 physics_material_override = SubResource("PhysicsMaterial_ktgx5")
 continuous_cd = true
-linear_damp = 0.5
-angular_damp = 1.55
+linear_damp = 0.2
+angular_damp = 0.5
+script = ExtResource("4_physics")
+rolling_resistance = 0.08
+sleep_speed = 0.01
 
 [node name="Pool Table - white _Mark Peters on Sketchfab" type="Node3D" parent="." unique_id=1147601489]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100.00001, 0, 0, 0)
