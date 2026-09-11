@@ -4,19 +4,19 @@
 [ext_resource type="ArrayMesh" uid="uid://ba6wkogeap7dc" path="res://assets/mesa2.res" id="2_kl0hw"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_noarx"]
-bounce = 0.3
+bounce = 1.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_oimtj"]
 size = Vector3(0.24891663, 1, 0.13616943)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_v5i0k"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_hgol0"]
+bounce = 0.11
+absorbent = true
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_ds2lj"]
 size = Vector3(0.8214884, 0.083984375, 0.053466797)
-
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_a0tk4"]
-bounce = 0.4
-absorbent = true
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iwtcp"]
 size = Vector3(1.9579351, 1.294, 0.9831676)
@@ -154,7 +154,7 @@ mesh = ExtResource("2_kl0hw")
 
 [node name="Rojos" type="StaticBody3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab" unique_id=716479983]
 transform = Transform3D(1, 0, 0, 0, -1.6292067e-07, -1, 0, 1, -1.6292067e-07, 0, 0, 0)
-physics_material_override = SubResource("PhysicsMaterial_noarx")
+physics_material_override = SubResource("PhysicsMaterial_hgol0")
 
 [node name="nxnz" type="CollisionShape3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/Rojos" unique_id=335496062]
 transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.9999999, -0.484, 0.836, -0.52258754)
@@ -188,7 +188,6 @@ debug_color = Color(0.9764706, 0, 0.40784314, 0.8627451)
 
 [node name="Pano" type="StaticBody3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab" unique_id=1465219660]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
-physics_material_override = SubResource("PhysicsMaterial_a0tk4")
 
 [node name="Pano" type="CollisionShape3D" parent="Sketchfab_model/9b4d3ba4e2164edfa4d8b143de50a587_fbx/RootNode/Pool Table _Mark Peters on Sketchfab/Pano" unique_id=940666147]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.002, 0.184, -0.0020685494)

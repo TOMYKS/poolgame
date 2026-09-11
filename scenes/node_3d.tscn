@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://daavl4nvvfm8"]
 
-[ext_resource type="PackedScene" uid="uid://chqrdsnuldjhl" path="res://table.tscn" id="1_a202f"]
-[ext_resource type="PackedScene" uid="uid://dj5bh0t0e81bg" path="res://ball.tscn" id="2_noarx"]
-[ext_resource type="Script" uid="uid://dogxeonkhu58i" path="res://camara_pivot.gd" id="3_a0tk4"]
+[ext_resource type="PackedScene" uid="uid://chqrdsnuldjhl" path="res://scenes/table.tscn" id="1_a202f"]
+[ext_resource type="PackedScene" uid="uid://dj5bh0t0e81bg" path="res://scenes/ball.tscn" id="2_noarx"]
+[ext_resource type="Script" uid="uid://dogxeonkhu58i" path="res://scripts/camara_pivot.gd" id="3_a0tk4"]
 
 [node name="Sala" type="Node3D" unique_id=1281423428]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1168970937]
+transform = Transform3D(-4.2884434e-08, 0.19359526, -0.9810815, 8.462318e-09, 0.9810815, 0.19359526, 1, -8.881784e-16, -4.371139e-08, -1.5570848, 1.238989, 0)
 
 [node name="Mesa" parent="." unique_id=1870686171 instance=ExtResource("1_a202f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00016528368, 1.1920929e-07, 0.005880654)
@@ -18,8 +21,8 @@ transform = Transform3D(1, 0, 0, 0, -0.0120632555, 0.9999273, 0, -0.9999273, -0.
 light_indirect_energy = 1.25
 
 [node name="Ball" parent="." unique_id=151042961 instance=ExtResource("2_noarx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7880732, 0.9190122, 0.45657668)
-sleep_speed = 0.02
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.46036017, 0.92191017, 0.43936208)
+angular_damp = 2.0
 
 [node name="CamaraPivot" type="Node3D" parent="." unique_id=513250114 node_paths=PackedStringArray("target_ball")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
